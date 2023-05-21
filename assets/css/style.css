@@ -155,6 +155,12 @@ html {
     height: auto;
     
 }
+
+#main a:active, 
+#main a:focus {
+    background-color: transparent;
+}
+
 #footer,
 #content {
     display: block;
