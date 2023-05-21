@@ -24,7 +24,8 @@ html {
 }
 
 #header a:active,
-#header label:active {
+#header label:active,
+#contact button:active {
     -webkit-tap-highlight-color: transparent;
 }
 
