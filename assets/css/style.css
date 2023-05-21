@@ -1,0 +1,350 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+html {
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    margin-top: 10px;
+    margin-right: 60px;
+    height: 60px;
+    filter: drop-shadow(2.5px 1.5px 2.5px #303030);
+}
+
+#nav-desktop {
+    display: flex;
+    justify-content: center;
+}
+
+#nav-desktop .nav-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-desktop .nav-link {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+}
+
+.btn-menu {
+    display: none;
+    font-size: 30px;
+    margin-right: 10px;
+    color: white;
+    text-shadow: 2.5px 1.5px 4px #303030;
+    cursor: pointer;
+}
+
+#nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+#nav-responsive {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 290px;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 1px;
+    transform: translateX(+120%);
+    transition: transform linear 0.2s;
+}
+
+#nav-responsive .nav-list {
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+#nav-responsive .nav-link {
+    display: block;
+    padding: 10px;
+    color: #000000;
+    text-decoration: none;
+    text-align: right;
+    margin-right: 25px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+#nav-responsive .btn-close-menu {
+    font-size: 35px;
+    text-align: right;
+    margin-right: 30px;
+    padding-top: 20px;
+    color: white;
+    text-shadow: 2.5px 1px 4px #303030;
+}
+
+#nav-responsive .btn-close-menu label {
+    cursor: pointer;
+}
+
+.nav-list {
+    text-transform: uppercase;
+    font-size: 18px;
+
+}
+
+#nav-desktop .nav-list a {
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: black;
+    background-color: rgba(0, 0, 0, 0.);
+}
+
+#nav-desktop .nav-list a:hover {
+    background-color: #474747;
+    color: white;
+    transition: background-color 0.5s ease-in-out;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#nav-desktop .nav-list a:active {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+#nav-input:checked~#nav-responsive {
+    transform: translateX(0%);
+}
+
+#nav-input:checked~#nav-overlay {
+    display: block;
+}
+
+#banner img {
+    width: 100%;
+    opacity: 0.2;
+    height: auto;
+    
+}
+#footer,
+#content {
+    display: block;
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+
+}
+
+#content h2,
+#content p {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#footer,
+div[id^="content"]>div {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#contact {
+    padding-bottom: 100px;
+}
+
+#contact-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: left;
+    padding-top: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    max-width: 950px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#contact-form .input-contact {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+    box-shadow: 1px 3px 5px 0px #bebdbd;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#contact-form button[type=submit] {
+    background-color: #474747;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 1px 3px 5px 0px #bebdbd;
+    font-size: 15px;
+}
+
+#contact-form button[type=submit]:hover {
+    color: #474747;
+    background-color: #d1d1d1;
+    transition: background-color 0.5s ease-in-out;
+
+}
+
+#contact-form .alert-messagee {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 30px;
+    color: rgb(1, 65, 1);
+    border: none;
+}
+
+#about,
+#education,
+#experience,
+#product,
+#contact {
+    scroll-margin-top: 115px;
+}
+
+
+#content h2 {
+    text-align: center;
+}
+
+#content div[class*="-content"]
+{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 320px;
+    line-height: 320px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 12px 0.2px inset;
+}
+#content .about-content {
+    
+
+}
+
+#content .education-content {
+    
+    
+}
+#content .experience-content {}
+#content .product-content {
+}
+
+#footer h2{
+    text-align: center;
+}
+/* Responsive styles */
+@media (max-width: 1024px) {
+    #nav-desktop .nav-list {
+        font-size: 15px;
+    }
+
+    .nav-logo img {
+        margin-right: 54px;
+        height: 60px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    #logo {
+        margin-right: auto;
+    }
+
+    .nav-logo img {
+        margin-left: 15px;
+        height: 35px;
+    }
+
+    #nav-desktop {
+        display: none;
+    }
+
+    .btn-menu {
+        display: block;
+        /* Show the menu button */
+    }
+
+    #nav-overlay {
+        display: none;
+        /* Hide the navigation overlay initially */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .nav-link {
+        padding: 10px 20px;
+    }
+
+    .fa-bars {
+        cursor: pointer;
+    }
+    #about,
+    #education,
+    #experience,
+    #product,
+    #contact {
+        scroll-margin-top: 90px;
+    }
+}
+
+
