@@ -308,6 +308,10 @@ div[id^="content"]>div {
 }
 
 @media (max-width: 800px) {
+    #main a:active {
+     background-color: transparent !important;
+    }
+    
     #logo {
         margin-right: auto;
     }
