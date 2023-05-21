@@ -23,6 +23,11 @@ html {
     box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.8);
 }
 
+#header a:active,
+#header label:active {
+    -webkit-tap-highlight-color: transparent;
+}
+
 #logo {
     display: flex;
     align-items: center;
@@ -153,12 +158,6 @@ html {
     width: 100%;
     opacity: 0.2;
     height: auto;
-    
-}
-
-#main a:active, 
-#main a:focus {
-    background-color: transparent;
 }
 
 #footer,
@@ -308,10 +307,6 @@ div[id^="content"]>div {
 }
 
 @media (max-width: 800px) {
-    #main a:active {
-     background-color: transparent !important;
-    }
-    
     #logo {
         margin-right: auto;
     }
