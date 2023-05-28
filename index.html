@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PMK - Phạm Minh Khang</title>
-    <link rel="stylesheet" href="./assets/css/grid.css">
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-  </head>
-  <body>
-    <div id="main">
-      <div id="header">
-        <div id="logo">
-          <div class="nav-logo">
-            <a href="#"><img src="./assets/img/logo/logo.png" alt="" /></a>
-          </div>
-        </div>
-        <div id="nav-desktop">
-          <ul class="nav-list">
-            <li><a class="nav-link" href="#about">About.me</a></li>
-            <li><a class="nav-link" href="#education">Education</a></li>
-            <li><a class="nav-link" href="#experience">Experience</a></li>
-            <li><a class="nav-link" href="#product">Product</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <label for="nav-input" class="btn-menu">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" name="" hidden id="nav-input" />
-        <label for="nav-input" id="nav-overlay"></label>
-        <div id="nav-responsive">
-          <div class="btn-close-menu">
-            <label for="nav-input"><i class="fa-solid fa-xmark"></i></label>
-          </div>
-          <ul class="nav-list">
-            <li><a class="nav-link" href="#about">About-me</a></li>
-            <li><a class="nav-link" href="#education">Education</a></li>
-            <li><a class="nav-link" href="#experience">Experience</a></li>
-            <li><a class="nav-link" href="#product">Eroduct</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PMK - Phạm Minh Khang</title>
+  <link rel="stylesheet" href="./assets/css/grid.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div class="nav-logo">
+          <a href="#"><img src="./assets/img/logo/logo.png" alt="" /></a>
         </div>
       </div>
-      <div id="banner">
-        <div class="banner-img">
-          <img
-            src="https://www.ps4wallpapers.com/wp-content/uploads/2017/02/black_white_pattern_3840x2160.jpg"
-            alt="" />
-        </div>
+      <div id="nav-desktop">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About.me</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#product">Product</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <div id="content">
-        <div class="grid container" id="about">
+      <label for="nav-input" class="btn-menu">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <input type="checkbox" name="" hidden id="nav-input" />
+      <label for="nav-input" id="nav-overlay"></label>
+      <div id="nav-responsive">
+        <div class="btn-close-menu">
+          <label for="nav-input"><i class="fa-solid fa-xmark"></i></label>
+        </div>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About-me</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#product">Eroduct</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="banner">
+      <div class="banner-img">
+        <img src="https://www.ps4wallpapers.com/wp-content/uploads/2017/02/black_white_pattern_3840x2160.jpg" alt="" />
+      </div>
+    </div>
+    <div id="content">
+      <div id="about">
+        <div class="grid wide">
           <h2>About me</h2>
           <div class="row">
             <div class="col l-7 m-7 s-12">
@@ -72,12 +70,14 @@
             </div>
           </div>
         </div>
-        <div class="grid container" id="education">
+      </div>
+      <div id="education">
+        <div class="grid wide">
           <h2>My Education</h2>
           <div class="row">
             <div class="col l-5 m-5 s-12">
               <div class="education-content">
-                Education-content
+                Edu-IMG
               </div>
             </div>
             <div class="col l-7 m-7 s-12">
@@ -87,7 +87,9 @@
             </div>
           </div>
         </div>
-        <div class="grid container" id="experience">
+      </div>
+      <div id="experience">
+        <div class="grid wide">
           <h2>My Experience</h2>
           <div class="row">
             <div class="col l-12 m-12 s-12">
@@ -97,8 +99,10 @@
             </div>
           </div>
         </div>
-        <div class="grid container" id="product">
-            <h2>My Products</h2>
+      </div>
+      <div id="product">
+        <h2>My Products</h2>
+        <div class="grid wide">
           <div class="row">
             <div class="col l-4 m-4 s-12">
               <div class="product-content">
@@ -134,50 +138,21 @@
             </div>
           </div>
         </div>
-        <div class="grid container" id="contact">
-          <div class="contact-form">
-          <h2>Contact</h2>
-            <form id="contact-form" name="data">
-              <div class="input-contact">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="Name" required />
-              </div>
-              <div class="input-contact">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="Email" required />
-              </div>
-              <div class="input-contact">
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="Phone" required />
-              </div>
-              <div class="input-contact">
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="Title" required />
-              </div>
-              <div class="input-contact">
-                <label for="message">Message:</label>
-                <textarea id="message" name="Message" required></textarea>
-              </div>
-              <div class="input-contact">
-                <button type="submit">SEND</button>
-              </div>
-              <div class="alert-messagee" id="alert-message"></div>
-            </form>
+      </div>
+    </div>
+    <footer>
+      <div id="footer">
+        <h2>Thanks for Visiting</h2>
+        <h2>This page is currently under construction.</h2>
+        <div class="grid wide">
+          <div class="row">
+
           </div>
         </div>
       </div>
-      <footer>
-          <div id="footer">
-            <h2>Thanks for Visiting</h2>
-            <h2>This page is currently under construction.</h2>
-            <div class="grid wide container">
-              <div class="row">
+    </footer>
+  </div>
+  <script src="./assets/js/main.js"></script>
+</body>
 
-              </div>
-            </div>
-          </div>
-      </footer>
-    </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
 </html>
