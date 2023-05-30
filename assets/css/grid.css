@@ -317,8 +317,9 @@
 /* tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
     .wide {
-            width: 644px;
+        width: 644px;
     }
+
     .row {
         margin-right: -8px;
         margin-left: -8px;
