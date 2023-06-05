@@ -73,40 +73,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //add focus for navbar-link
 
+// Get all the <a> tags in the navbar list
 var links = document.querySelectorAll('.nav-link');
 
-// Lặp qua từng thẻ <a> và thêm sự kiện "click"
-links.forEach(function (link) {
-  link.addEventListener('click', function (event) {
-    // Xóa class "focus-css" từ tất cả các thẻ <a> khác
-    links.forEach(function (otherLink) {
-      otherLink.classList.remove('focus-css');
+// Loop through each <a> tag and add a "click" event
+links.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+        // Remove the "focus-css" class from all other <a> tags
+        links.forEach(function(otherLink) {
+            otherLink.classList.remove('focus-css');
+        });
+
+        // Add the "focus-css" class to the clicked <a> tag
+        link.classList.add('focus-css');
+
+        // Stop the click event from propagating to the outer elements
+        event.stopPropagation();
     });
-
-    // Thêm class "focus-css" vào thẻ <a> được click
-    link.classList.add('focus-css');
-
-    // Dừng sự kiện click để không xóa class "focus-css" sau khi xử lý
-    event.stopPropagation();
-  });
 });
 
-// Thêm sự kiện "click" trên toàn bộ trang
-document.addEventListener('click', function (event) {
-  // Kiểm tra xem người dùng đã click vào vùng ngoài thẻ <a> hay không
-  var isClickedOutside = true;
-  event.composedPath().forEach(function (element) {
-    if (element.classList && element.classList.contains('nav-link')) {
-      isClickedOutside = false;
-    }
-  });
-
-  // Nếu người dùng đã click vào vùng ngoài thẻ <a>, xóa class "focus-css" từ tất cả các thẻ <a>
-  if (isClickedOutside) {
-    links.forEach(function (link) {
-      link.classList.remove('focus-css');
+// Add a "click" event on the entire page
+document.addEventListener('click', function(event) {
+    // Check if the user clicked outside the <a> tag area
+    var isClickedOutside = true;
+    event.composedPath().forEach(function(element) {
+        if (element.classList && element.classList.contains('nav-link')) {
+            isClickedOutside = false;
+        }
     });
-  }
+
+    // If the user clicked outside the <a> tag area, remove the "focus-css" class from all <a> tags
+    if (isClickedOutside) {
+        links.forEach(function(link) {
+            link.classList.remove('focus-css');
+        });
+    }
 });
 
 
