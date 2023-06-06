@@ -229,7 +229,8 @@ div[id^="content"]>div {
 
 input::placeholder,
 textarea::placeholder {
-  font-size: 12px; /* Kích thước font chữ mới */
+    color: #797979b4;
+    font-size: 12px; /* Kích thước font chữ mới */
 }
 
 #contact-form button[type="submit"] {
