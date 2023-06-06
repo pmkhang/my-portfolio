@@ -227,6 +227,11 @@ div[id^="content"]>div {
     font-family: "Quicksand", sans-serif;
 }
 
+input::placeholder,
+textarea::placeholder {
+  font-size: 12px; /* Kích thước font chữ mới */
+}
+
 #contact-form button[type="submit"] {
     background-color: #474747;
     color: rgb(255, 255, 255);
@@ -252,6 +257,8 @@ div[id^="content"]>div {
     color: rgb(1, 65, 1);
     border: none;
 }
+
+
 
 #about,
 #education,
