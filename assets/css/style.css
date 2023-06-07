@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
-
 html {
     scroll-behavior: smooth;
     font-family: "Quicksand", sans-serif;
@@ -21,6 +19,7 @@ html {
     padding: 10px 20px;
     box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.8);
 }
+
 .header {
     max-width: 1200px;
     margin: 0 auto;
@@ -229,7 +228,8 @@ div[id^="content"]>div {
 input::placeholder,
 textarea::placeholder {
     color: #797979b4;
-    font-size: 12px; /* Kích thước font chữ mới */
+    font-size: 12px;
+    /* Kích thước font chữ mới */
 }
 
 #contact-form button[type="submit"] {
@@ -299,8 +299,11 @@ textarea::placeholder {
 
 /* Responsive styles */
 @media (max-width: 1024px) {
+
     #nav-desktop .nav-list {
         font-size: 12px;
+        line-height: 45px;
+
     }
 
     .nav-logo img {
@@ -310,7 +313,7 @@ textarea::placeholder {
     #nav-desktop .nav-list .nav-link {
         margin-left: 8px;
     }
-    
+
 }
 
 @media (max-width: 800px) {
