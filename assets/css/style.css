@@ -104,7 +104,6 @@ html {
     background-color: rgba(0, 0, 0, 0.4);
     display: none;
     backdrop-filter: blur(5px);
-
 }
 
 #nav-responsive {
@@ -261,8 +260,6 @@ textarea::placeholder {
     border: none;
 }
 
-
-
 #about,
 #education,
 #experience,
@@ -302,11 +299,9 @@ textarea::placeholder {
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-
     #nav-desktop .nav-list {
         font-size: 12px;
         line-height: 45px;
-
     }
 
     .nav-logo img {
@@ -316,7 +311,6 @@ textarea::placeholder {
     #nav-desktop .nav-list .nav-link {
         margin-left: 8px;
     }
-
 }
 
 @media (max-width: 800px) {
