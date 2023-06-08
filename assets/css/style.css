@@ -77,9 +77,9 @@ html {
 #nav-desktop .nav-list .nav-link.focus-css {
     background-color: #474747;
     color: white;
-    transition: background-color 0.5s ease-in-out;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    transition: background-color 0.5s linear;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 #nav-desktop .nav-list .nav-link:active {
