@@ -320,7 +320,7 @@ textarea::placeholder {
     }
 
     .nav-logo img {
-        margin-left: 15px;
+        margin: 10px 0 0 10px;
         height: 35px;
     }
 
@@ -348,9 +348,6 @@ textarea::placeholder {
         padding: 10px 20px;
     }
 
-    .fa-bars {
-        cursor: pointer;
-    }
 
     #about,
     #education,
