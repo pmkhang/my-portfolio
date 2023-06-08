@@ -269,6 +269,7 @@ textarea::placeholder {
 }
 
 #content h2 {
+    margin: 0 20px;
     text-align: center;
 }
 
