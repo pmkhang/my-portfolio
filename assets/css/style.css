@@ -314,7 +314,7 @@ textarea::placeholder {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 740px) {
     #logo {
         margin-right: auto;
     }
