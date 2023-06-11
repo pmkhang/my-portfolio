@@ -19,49 +19,49 @@
 </head>
 
 <body>
-  <div id="main">
-    <header id="header">
-      <nav class="header-navbar">
-        <div id="logo">
-          <div class="nav-logo">
-            <a href="#"><img src="./assets/img/logo/logo.png" alt="" /></a>
-          </div>
+  <header id="header">
+    <nav class="header-navbar">
+      <div id="logo">
+        <div class="nav-logo">
+          <a href="#"><img src="./assets/img/logo/logo.png" alt="" /></a>
         </div>
-        <div id="nav-desktop">
-          <ul class="nav-list">
-            <li><a class="nav-link" href="#about">About.me</a></li>
-            <li><a class="nav-link" href="#education">Education</a></li>
-            <li><a class="nav-link" href="#experience">Experience</a></li>
-            <li><a class="nav-link" href="#product">Product</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
+      </div>
+      <div id="nav-desktop">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About.me</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#product">Product</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <label for="nav-input" class="btn-menu">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <input type="checkbox" name="" hidden id="nav-input" />
+      <label for="nav-input" id="nav-overlay"></label>
+      <div id="nav-responsive">
+        <div class="btn-close-menu">
+          <label for="nav-input"><i class="fa-solid fa-xmark"></i></label>
         </div>
-        <label for="nav-input" class="btn-menu">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" name="" hidden id="nav-input" />
-        <label for="nav-input" id="nav-overlay"></label>
-        <div id="nav-responsive">
-          <div class="btn-close-menu">
-            <label for="nav-input"><i class="fa-solid fa-xmark"></i></label>
-          </div>
-          <ul class="nav-list">
-            <li><a class="nav-link" href="#about">About-me</a></li>
-            <li><a class="nav-link" href="#education">Education</a></li>
-            <li><a class="nav-link" href="#experience">Experience</a></li>
-            <li><a class="nav-link" href="#product">Product</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About-me</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#product">Product</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
     <div id="banner">
       <div class="banner-img">
         <img src="https://www.ps4wallpapers.com/wp-content/uploads/2017/02/black_white_pattern_3840x2160.jpg" alt="" />
       </div>
     </div>
-    <div id="content">
-      <div id="about">
+    <section id="content">
+      <article id="about">
         <div class="grid wide">
           <h2>About me</h2>
           <div class="row">
@@ -77,8 +77,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="education">
+      </article>
+      <article id="education">
         <div class="grid wide">
           <h2>My Education</h2>
           <div class="row">
@@ -94,8 +94,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="experience">
+      </article>
+      <article id="experience">
         <h2>My Experience</h2>
         <div class="grid wide">
           <div class="row">
@@ -106,8 +106,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="product">
+      </article>
+      <article id="product">
         <h2>My Products</h2>
         <div class="grid wide">
           <div class="row">
@@ -143,8 +143,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="contact">
+      </article>
+      <article id="contact">
         <div class="grid wide">
           <h2>Contact Me</h2>
           <div class="contact-form">
@@ -176,20 +176,18 @@
             </form>
           </div>
         </div>
-      </div>
-    </div>
-    <footer>
-      <div id="footer">
-        <h2>Thanks for Visiting</h2>
-        <h2>This page is currently under construction.</h2>
-        <h2>This page is currently under construction.</h2>
-        <div class="grid wide container">
-          <div class="row">
-          </div>
+      </article>
+    </section>
+    <footer id="footer">
+      <h2>Thanks for Visiting</h2>
+      <h2>This page is currently under construction.</h2>
+      <h2>This page is currently under construction.</h2>
+      <div class="grid wide container">
+        <div class="row">
         </div>
       </div>
     </footer>
-  </div>
+  </main>
   <script type="module" src="assets/js/main.js"></script>
 
 </body>
