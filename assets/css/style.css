@@ -216,7 +216,7 @@ html {
 #content div[class*="-content"] {
     font-size: 20px;
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 10px;
     min-height: 320px;
     line-height: 320px;
     background-color: rgb(255, 255, 255);
